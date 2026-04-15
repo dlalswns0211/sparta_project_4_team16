@@ -214,3 +214,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# C-MAPSS 데이터셋 무시
+CMAPSSData/
