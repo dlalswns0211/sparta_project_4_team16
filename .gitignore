@@ -217,3 +217,7 @@ __marimo__/
 
 # C-MAPSS 데이터셋 무시
 CMAPSSData/
+
+# MLflow runs (실험 기록 데이터)
+mlruns/
+mlruns.db
