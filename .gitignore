@@ -218,3 +218,6 @@ __marimo__/
 # C-MAPSS 데이터셋 무시
 CMAPSSData/
 *.txt
+*.csv
+*/preprocessed/
+*.pkl
