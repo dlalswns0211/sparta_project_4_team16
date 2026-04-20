@@ -221,3 +221,20 @@ CMAPSSData/
 *.csv
 */preprocessed/
 *.pkl
+
+
+
+# MLflow 결과물 제외
+mlruns/
+mlflow.db
+*.tfevents.*
+
+# 주피터 노트북 체크포인트 및 캐시
+.ipynb_checkpoints/
+__pycache__/
+
+# 가상환경 (uv가 만든 .venv)
+.venv/
+
+# 전처리된 대용량 데이터 (필요하다면 제외)
+preprocessed/*.csv
