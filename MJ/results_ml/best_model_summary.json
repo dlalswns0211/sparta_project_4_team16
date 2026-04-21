@@ -1,0 +1,43 @@
+{
+  "shap_model_name": "RandomForest",
+  "shap_top_features": [
+    "s_4",
+    "s_4_roll3",
+    "s_11",
+    "s_4_ema5",
+    "s_9",
+    "s_20",
+    "s_15",
+    "s_9_ema5",
+    "s_9_roll3",
+    "s_4_lag1"
+  ],
+  "best_model_name": "RandomForest",
+  "best_tree_name": "RandomForest",
+  "best_linear_name": "Lasso",
+  "selection_rule": "Val NASA(eval) -> Val RMSE",
+  "random_state": 42,
+  "n_splits_cv": 5,
+  "feature_count_tree": 140,
+  "feature_count_linear": 48,
+  "best_model_params": {
+    "n_estimators": 251,
+    "max_depth": 12,
+    "min_samples_split": 11,
+    "min_samples_leaf": 5,
+    "max_features": 0.43298331215843355
+  },
+  "best_model_val_eval_nasa": 4.1188723672156415,
+  "best_model_val_metrics": {
+    "RMSE": 15.68713903526045,
+    "MAE": 10.92634089207489,
+    "R2": 0.8585870145369473,
+    "NASA_Score": 30222.02829623186
+  },
+  "best_model_test_metrics": {
+    "RMSE": 18.662267376613805,
+    "MAE": 13.891906361309502,
+    "R2": 0.7983170103659107,
+    "NASA_Score": 804.2575502898277
+  }
+}
