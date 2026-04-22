@@ -1,0 +1,42 @@
+{
+  "shap_model_name": "RandomForest",
+  "shap_top_features": [
+    "s_4",
+    "s_11",
+    "s_15",
+    "s_9",
+    "s_14",
+    "s_21",
+    "s_17",
+    "s_2",
+    "s_20",
+    "s_3"
+  ],
+  "best_model_name": "RandomForest",
+  "best_tree_name": "RandomForest",
+  "best_linear_name": "Ridge",
+  "selection_rule": "Val RMSE -> CV RMSE -> Val NASA",
+  "random_state": 42,
+  "n_splits_cv": 5,
+  "feature_count_tree": 14,
+  "feature_count_linear": 6,
+  "best_model_params": {
+    "n_estimators": 347,
+    "max_depth": 7,
+    "min_samples_split": 11,
+    "min_samples_leaf": 6,
+    "max_features": 0.2371603301759982
+  },
+  "best_model_val_metrics": {
+    "RMSE": 14.801633264166997,
+    "MAE": 10.494399815213821,
+    "R2": 0.8624846647368464,
+    "NASA_Score": 21737.40021650077
+  },
+  "best_model_test_metrics": {
+    "RMSE": 17.973754099003163,
+    "MAE": 13.091811135071268,
+    "R2": 0.8129240120901815,
+    "NASA_Score": 647.4232583117606
+  }
+}
