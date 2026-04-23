@@ -1,19 +1,19 @@
 {
-  "shap_model_name": "LightGBM",
+  "shap_model_name": "XGBoost",
   "shap_top_features": [
     "s_4",
     "s_11",
     "s_15",
     "s_9",
     "s_2",
-    "s_21",
     "s_3",
-    "s_17",
-    "s_8_lag5",
-    "s_14_lag5"
+    "s_21",
+    "s_20",
+    "s_13",
+    "s_15_ema5"
   ],
-  "best_model_name": "LightGBM",
-  "best_tree_name": "LightGBM",
+  "best_model_name": "XGBoost",
+  "best_tree_name": "XGBoost",
   "best_linear_name": "Lasso",
   "selection_rule": "Val RMSE -> CV RMSE -> Val NASA",
   "random_state": 42,
@@ -21,25 +21,24 @@
   "feature_count_tree": 140,
   "feature_count_linear": 48,
   "best_model_params": {
-    "n_estimators": 596,
-    "max_depth": 3,
-    "learning_rate": 0.02492243299844671,
-    "num_leaves": 45,
-    "subsample": 0.5707921208261757,
-    "colsample_bytree": 0.8100308334813918,
-    "reg_alpha": 1.41229046915282,
-    "reg_lambda": 0.2818936773599485
+    "n_estimators": 415,
+    "max_depth": 4,
+    "learning_rate": 0.02051297252731324,
+    "subsample": 0.7985223375197199,
+    "colsample_bytree": 0.8472363197310622,
+    "reg_alpha": 0.020071993110896087,
+    "reg_lambda": 0.08216622089577114
   },
   "best_model_val_metrics": {
-    "RMSE": 15.299989444059095,
-    "MAE": 11.069722336428327,
-    "R2": 0.8654808662493787,
-    "NASA_Score": 25466.871954214104
+    "RMSE": 15.186940077114043,
+    "MAE": 10.791776553162485,
+    "R2": 0.8674614062632119,
+    "NASA_Score": 26420.64994056618
   },
   "best_model_test_metrics": {
-    "RMSE": 18.257007496812246,
-    "MAE": 14.258768313023102,
-    "R2": 0.8069811856444409,
-    "NASA_Score": 646.3945807052012
+    "RMSE": 17.980833030858864,
+    "MAE": 13.885666856765747,
+    "R2": 0.8127766239653387,
+    "NASA_Score": 593.6037192820106
   }
 }

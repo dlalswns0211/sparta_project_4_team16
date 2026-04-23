@@ -1,0 +1,44 @@
+{
+  "shap_model_name": "XGBoost",
+  "shap_top_features": [
+    "s_4",
+    "s_11",
+    "s_15",
+    "s_9",
+    "s_2",
+    "s_21",
+    "s_3",
+    "s_2_ema5",
+    "s_8_lag5",
+    "s_13"
+  ],
+  "best_model_name": "XGBoost",
+  "best_tree_name": "XGBoost",
+  "best_linear_name": "Lasso",
+  "selection_rule": "Val RMSE -> CV RMSE -> Val NASA",
+  "random_state": 42,
+  "n_splits_cv": 5,
+  "feature_count_tree": 140,
+  "feature_count_linear": 48,
+  "best_model_params": {
+    "n_estimators": 672,
+    "max_depth": 3,
+    "learning_rate": 0.019196047667248594,
+    "subsample": 0.5950160536424912,
+    "colsample_bytree": 0.8375688420604991,
+    "reg_alpha": 1.3021010831052886e-08,
+    "reg_lambda": 0.01367437790408387
+  },
+  "best_model_val_metrics": {
+    "RMSE": 14.324438605627636,
+    "MAE": 10.196799882411664,
+    "R2": 0.8712085379121375,
+    "NASA_Score": 20703.350261645486
+  },
+  "best_model_test_metrics": {
+    "RMSE": 18.181274800614357,
+    "MAE": 14.08905571937561,
+    "R2": 0.8085792040259121,
+    "NASA_Score": 581.2000814308526
+  }
+}
