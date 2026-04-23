@@ -1,0 +1,10 @@
+{
+  "cnn_channels": 128,
+  "kernel_size": 5,
+  "d_model": 64,
+  "nhead": 4,
+  "num_layers": 2,
+  "dropout": 0.19430679432289802,
+  "lr": 0.0010402587615883842,
+  "weight_decay": 0.0005280796376895364
+}

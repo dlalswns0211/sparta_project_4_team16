@@ -1,0 +1,132 @@
+{
+  "best_model": "Transformer",
+  "selection_rule": "Val NASA(eval) → Val RMSE",
+  "random_state": 42,
+  "window_size": 30,
+  "n_features": 14,
+  "dl_features": [
+    "s_2",
+    "s_3",
+    "s_4",
+    "s_7",
+    "s_8",
+    "s_9",
+    "s_11",
+    "s_12",
+    "s_13",
+    "s_14",
+    "s_15",
+    "s_17",
+    "s_20",
+    "s_21"
+  ],
+  "models": {
+    "LSTM": {
+      "params": {
+        "hidden_size": 64,
+        "num_layers": 1,
+        "dropout": 0.2243929286862649,
+        "fc_size": 64,
+        "lr": 0.0059487468132197715,
+        "weight_decay": 2.6100256506134754e-05
+      },
+      "n_params": 24705,
+      "best_epoch": 16,
+      "val_eval_nasa": 8.2,
+      "val_metrics": {
+        "RMSE": 11.3428,
+        "MAE": 8.47,
+        "R2": 0.9262,
+        "NASA_Score": 6083.6165
+      },
+      "test_metrics": {
+        "RMSE": 14.7714,
+        "MAE": 10.6682,
+        "R2": 0.8736,
+        "NASA_Score": 340.4902
+      },
+      "fit_seconds": 148.1
+    },
+    "BiLSTM": {
+      "params": {
+        "hidden_size": 64,
+        "num_layers": 2,
+        "dropout": 0.28242799368681437,
+        "fc_size": 32,
+        "lr": 0.0015304852121831463,
+        "weight_decay": 1.3783237455007196e-06
+      },
+      "n_params": 144449,
+      "best_epoch": 11,
+      "val_eval_nasa": 5.8,
+      "val_metrics": {
+        "RMSE": 16.2812,
+        "MAE": 12.3623,
+        "R2": 0.848,
+        "NASA_Score": 18768.6376
+      },
+      "test_metrics": {
+        "RMSE": 18.9095,
+        "MAE": 13.1547,
+        "R2": 0.7929,
+        "NASA_Score": 929.1112
+      },
+      "fit_seconds": 500.4
+    },
+    "Transformer": {
+      "params": {
+        "d_model": 64,
+        "nhead": 8,
+        "num_layers": 4,
+        "dim_feedforward": 128,
+        "dropout": 0.15597101766581076,
+        "lr": 0.006097025297491433,
+        "weight_decay": 4.149795789891592e-05
+      },
+      "n_params": 137089,
+      "best_epoch": 11,
+      "val_eval_nasa": 4.9,
+      "val_metrics": {
+        "RMSE": 11.2077,
+        "MAE": 8.2538,
+        "R2": 0.9279,
+        "NASA_Score": 6512.3841
+      },
+      "test_metrics": {
+        "RMSE": 14.771,
+        "MAE": 11.1482,
+        "R2": 0.8737,
+        "NASA_Score": 329.0642
+      },
+      "fit_seconds": 891.1
+    },
+    "CNN+Transformer": {
+      "params": {
+        "cnn_channels": 128,
+        "kernel_size": 5,
+        "d_model": 64,
+        "nhead": 4,
+        "num_layers": 2,
+        "dropout": 0.19430679432289802,
+        "lr": 0.0010402587615883842,
+        "weight_decay": 0.0005280796376895364
+      },
+      "n_params": 119489,
+      "best_epoch": 9,
+      "val_eval_nasa": 12.2,
+      "val_metrics": {
+        "RMSE": 12.7774,
+        "MAE": 9.0041,
+        "R2": 0.9064,
+        "NASA_Score": 10297.8516
+      },
+      "test_metrics": {
+        "RMSE": 16.9344,
+        "MAE": 12.5343,
+        "R2": 0.8339,
+        "NASA_Score": 488.4519
+      },
+      "fit_seconds": 383.2
+    }
+  }
+}
