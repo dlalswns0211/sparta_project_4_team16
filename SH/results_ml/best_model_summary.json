@@ -1,0 +1,46 @@
+{
+  "shap_model_name": "LightGBM",
+  "shap_top_features": [
+    "s_11",
+    "s_4",
+    "s_11_rollstd10",
+    "s_17",
+    "s_14_rollstd10",
+    "s_15",
+    "s_11_diff1",
+    "s_15_rollstd10",
+    "s_9_rollstd10",
+    "s_4_rollstd10"
+  ],
+  "best_model_name": "LightGBM",
+  "best_tree_name": "LightGBM",
+  "best_linear_name": "ElasticNet",
+  "selection_rule": "Val NASA(eval) -> Val RMSE",
+  "random_state": 42,
+  "n_splits_cv": 5,
+  "feature_count_tree": 126,
+  "feature_count_linear": 86,
+  "best_model_params": {
+    "n_estimators": 692,
+    "max_depth": 11,
+    "learning_rate": 0.017850705608912134,
+    "num_leaves": 172,
+    "subsample": 0.9961932162383923,
+    "colsample_bytree": 0.5136095131955984,
+    "reg_alpha": 1.2645427938537928,
+    "reg_lambda": 3.0458103267083433e-06
+  },
+  "best_model_val_eval_nasa": 22.432746360877857,
+  "best_model_val_metrics": {
+    "RMSE": 12.090210328684034,
+    "MAE": 8.180286911755239,
+    "R2": 0.9162714011756267,
+    "NASA_Score": 32759.07432406602
+  },
+  "best_model_test_metrics": {
+    "RMSE": 27.00387249500165,
+    "MAE": 18.972618512245866,
+    "R2": 0.7478668342770012,
+    "NASA_Score": 8331.347998265665
+  }
+}
